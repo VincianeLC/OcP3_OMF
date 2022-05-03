@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/index.scss:./css/index.css ./sass/restaurant.scss:./css/restaurant.css"
+    "sass": "sass --watch ./sass/index.scss: ./css/index.css ./sass/restaurant.scss: ./css/restaurant.css"
   },
   "author": "Vinciane Le Chelveder",
   "license": "ISC",

@@ -1,22 +1,29 @@
-@import './Utils/variables','./Layout/header';
+@import './Utils/variables';
+@import './Layout/header';
+@import './base/main';
 
 
-        
+
+main {    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+  
+}
+
     .localisation {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $white;
-  
+        background-color: $grey;
+
         &__icon{
             display: flex;
         flex-direction: row;
-        }
+
         &__text{
             display: flex;
         flex-direction: row;
-        }
-        
-    }
-    
+        }}}
 
+ 
