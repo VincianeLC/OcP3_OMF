@@ -1,0 +1,32 @@
+.footer{
+    background-color: #353535;
+    color: $white;
+    padding: 10px;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+&__logo {
+   padding: 20px 0px 0px 20px;
+    color: $white;}
+    img {
+       height:  20px;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+      }
+
+}
+ul{
+padding: 0px 0px 0px 20px;
+color: $white;
+
+}
+li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+    
+ 
+}
+

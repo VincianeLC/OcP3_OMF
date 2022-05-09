@@ -1,14 +1,47 @@
-header{
+
+
+.header {
+    
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-  
-    .logo{
-       background-color: rebeccapurple; 
+    width: 100%;
+    border-top-color:$white ;
+    position: sticky;
+    top: -10px;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+    
+    a{
+        text-decoration: none;
+        color: black;
     }
-    .icon{
+    &__icon {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo {
         
-    }
+        width: auto;
+        flex: 1;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     padding: 10px 0px 10px 0px;
  
+
+        img {
+            display: flex;
+            height: 100%;
+            object-fit: cover;
+            
+            
+            
+
+        }
+    }
+
 }
