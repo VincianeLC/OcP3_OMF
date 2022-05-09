@@ -4,6 +4,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -39,12 +47,17 @@ body {
   object-fit: cover;
 }
 
-.part1__btn {
-  padding: 15px 20px 15px 20px;
+.btn {
+  padding: 15px;
   border-radius: 25px 25px 25px 25px;
   background: rgb(147, 86, 220);
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   color: #FFFFFF;
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -89,6 +102,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
+  padding: 15px;
 }
 .localisation__icon {
   padding-right: 10px;
@@ -130,9 +144,13 @@ main {
   margin: 10px;
   background-color: #F2F2F2;
 }
+.restaurants__title {
+  padding: 15px;
+}
 
 .card {
   background-color: #FFFFFF;
+  gap: 15px;
 }
 .card__info {
   display: flex;
@@ -165,11 +183,9 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   background-color: #FFFFFF;
-  line-height: 5px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding: 15px;
   border-radius: 0px 0px 20px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   box-shadow: 2px 10px 12px #c6c3c3;
 }
 .card__content .like {

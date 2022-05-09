@@ -1,14 +1,17 @@
 
-.part1{
-
-
-&__btn{
-    padding: 15px 20px 15px 20px;
+.btn{
+   padding: 15px;
     border-radius: 25px 25px 25px 25px;
     background: rgb(147,86,220);
     background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
 color: $white;
+text-decoration: none;
+width: 50%;
+text-align: center;
+align-self: center;
+margin-bottom:10px ;
+
 
 }
-}
+
 
