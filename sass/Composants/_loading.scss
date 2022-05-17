@@ -1,0 +1,55 @@
+
+
+
+
+
+
+.loadcontent
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: loadinger 0.3s;
+    animation-delay: 2.9s;
+    animation-fill-mode: both;
+}
+
+.loading
+{
+    border: 10px dotted $colorprimary;
+    border-top: 10px dotted $colorsecondary;
+    border-bottom:10px dotted $colortertiary;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    animation: loading 1s ease-in-out;
+    animation-iteration-count: 3;
+}
+@keyframes loading
+{
+    0%
+    { 
+        transform: rotate(0deg) scale(0) ; 
+       
+    }
+    100%
+    { 
+        transform:  rotate(360deg) scale(2);
+        
+    }
+}
+
+
+@keyframes loadinger
+{
+    100%
+    {
+       opacity: 0;
+       z-index: -1;
+     
+    }
+}
