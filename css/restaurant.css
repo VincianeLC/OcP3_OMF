@@ -147,6 +147,8 @@ main section .menu__description {
 }
 main section .check {
   display: flex;
+  flex-direction: row;
+  gap: 10px;
   justify-content: space-around;
   background-color: #FFFFFF;
   margin-bottom: 10px;
@@ -155,21 +157,33 @@ main section .check {
   width: 100%;
   overflow: hidden;
 }
-main section .check__description {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  width: auto;
-  flex: 1;
-  padding: 10px;
-}
 main section .check__ingredients {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  width: auto;
+  flex: 1;
+  padding: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+main section .check__ingredients h3 {
+  font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+main section .check__ingredients p {
+  font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 main section .check__price {
   display: flex;
-  align-self: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
   padding: 10px;
   width: 50px;
 }
@@ -182,22 +196,24 @@ main section .check__icon {
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
 }
-main section .check:hover .check__icon {
-  margin-right: 0px;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-}
-main section .check i {
+main section .check__icon i {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #99E2D0;
   border-radius: 50px;
   width: 25px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   background-color: #FFFFFF;
+}
+main section .check:hover .check__icon {
+  margin-right: 0px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+main section .check:hover .check__icon i {
   animation: rotate;
-  animation-duration: 4s;
+  animation-duration: 1s;
 }
 
 @keyframes rotate {

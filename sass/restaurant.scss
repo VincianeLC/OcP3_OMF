@@ -57,6 +57,8 @@ main {
                 border-bottom: 3px solid $colortertiary;
                 width: 10%;
 
+                
+
             }
 
             &__description {
@@ -70,6 +72,8 @@ main {
 
         .check {
             display: flex;
+            flex-direction: row;
+            gap:10px;
             justify-content: space-around;
             background-color: $white;
             margin-bottom: 10px;
@@ -79,32 +83,38 @@ main {
             overflow: hidden;
 
 
-
-            &__description {
-                display: flex;
-                flex-direction: column;
-                padding-left: 10px;
-                width: auto;
-                flex: 1;
-                padding: 10px;
-
-
-            }
-
             &__ingredients {
                 display: flex;
                 flex-direction: column;
+                gap:10px;
+                width: auto;
+                flex: 1;
+                padding: 10px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                h3{
+                    font-weight: 400;
+                
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;}
+                    p{
+                        font-weight: 300;
 
-
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                    }
 
             }
 
             &__price {
                 display: flex;
-                align-self: flex-end;
+                justify-content: flex-end;
+                align-items: flex-end;
                 padding: 10px;
                 width: 50px;
-
 
 
             }
@@ -118,30 +128,32 @@ main {
                 background-color: $colortertiary;
                 border-radius: 0px 15px 15px 0px;
 
-
+                i {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $colortertiary;
+                    border-radius: 50px;
+                    width: 25px;
+                    aspect-ratio: 1 / 1;
+                    background-color: $white;
+                }
 
             }
 
             &:hover .check__icon {
+               
                 margin-right: 0px;
                 transition-duration: 0.5s;
                 transition-timing-function: ease;
 
-            }
+            
 
             i {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: $colortertiary;
-                border-radius: 50px;
-                width: 25px;
-                aspect-ratio: 1;
-
-                background-color: $white;
-
+              
                 animation: rotate;
-                animation-duration: 4s;
+                animation-duration: 1s;
+            }
 
 
             }
