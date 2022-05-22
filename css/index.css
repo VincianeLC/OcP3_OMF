@@ -308,6 +308,7 @@ ol li:before {
 }
 .icon .far:hover {
   opacity: 0;
+  cursor: pointer;
 }
 .icon .far:hover + .fas {
   opacity: 1;
